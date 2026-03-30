@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      - APP_VERSION=v1
