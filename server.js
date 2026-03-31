@@ -1,6 +1,6 @@
 const http = require("http");
 
-const VERSION = "v2";
+const VERSION = "v3";
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
     <h1>Blue-Green Test App</h1>
     <p style="font-size:2em;color:#4ade80">${VERSION}</p>
     <p style="color:#888">Container: ${hostname}</p>
-    <p style="color:#60a5fa">Updated in v2!</p>
+    <p style="color:#f59e0b">Updated in v3 — polling auto-deploy!</p>
     <p style="color:#888">Time: ${new Date().toISOString()}</p>
   </div>
 </body>
