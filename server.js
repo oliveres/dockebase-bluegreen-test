@@ -1,6 +1,6 @@
 const http = require("http");
 
-const VERSION = "v6";
+const VERSION = "v7";
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
     <h1>Blue-Green Test App</h1>
     <p style="font-size:2em;color:#4ade80">${VERSION}</p>
     <p style="color:#888">Container: ${hostname}</p>
-    <p style="color:#22d3ee">v6 — webhook instant deploy!</p>
+    <p style="color:#34d399">v7 — webhook confirmed!</p>
     <p style="color:#888">Time: ${new Date().toISOString()}</p>
   </div>
 </body>
