@@ -1,6 +1,6 @@
 const http = require("http");
 
-const VERSION = "v4";
+const VERSION = "v5";
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
     <h1>Blue-Green Test App</h1>
     <p style="font-size:2em;color:#4ade80">${VERSION}</p>
     <p style="color:#888">Container: ${hostname}</p>
-    <p style="color:#a78bfa">v4 — polling round 2!</p>
+    <p style="color:#ef4444">v5 — should overwrite blue (v4), rollback goes to v3</p>
     <p style="color:#888">Time: ${new Date().toISOString()}</p>
   </div>
 </body>
