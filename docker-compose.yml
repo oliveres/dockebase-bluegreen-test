@@ -3,4 +3,4 @@ services:
     build: .
     restart: unless-stopped
     environment:
-      - APP_VERSION=v1
+      - APP_VERSION=${APP_VERSION:-v1}
